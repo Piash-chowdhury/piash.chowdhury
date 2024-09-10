@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Piash Chowdhury</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logo" class="logo">
+        <h1>Piash Chowdhury</h1>
+        <p>Geospatial Scientist & Environmental Researcher</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <div id="nav-placeholder"></div>
+
+    <section>
+        <h2>Welcome to My Portfolio</h2>
+        <p>Explore my work, research, and projects in environmental science, hydrodynamic modeling, and geospatial technologies.</p>
+        <img src="images/environment.jpg" alt="Environmental Research">
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Piash Chowdhury | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        // JavaScript to load the navigation bar
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
