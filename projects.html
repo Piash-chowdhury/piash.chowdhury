@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Piash Chowdhury</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logo" class="logo">
+        <h1>Piash Chowdhury</h1>
+        <p>Geospatial Scientist & Environmental Researcher</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <div id="nav-placeholder"></div>
+
+    <section>
+        <h2>Projects</h2>
+        <article>
+            <h3>Monitoring Water Budget Components</h3>
+            <p>Using Earth Observation data and Machine Learning Models to analyze water budget components in the Ganges-Brahmaputra-Meghna River Basins.</p>
+            <img src="images/water-budget.jpg" alt="Water Budget">
+        </article>
+        <article>
+            <h3>Blue Carbon Sequestration</h3>
+            <p>Quantifying blue carbon sequestration in Bangladesh's mangrove forests, focusing on Nijhum Dwip.</p>
+            <img src="images/blue-carbon.jpg" alt="Blue Carbon Sequestration">
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Piash Chowdhury | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        // JavaScript to load the navigation bar
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
