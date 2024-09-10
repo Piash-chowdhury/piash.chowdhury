@@ -1,0 +1,19 @@
+/* Navigation Bar Styling */
+nav {
+    background-color: #333;
+    padding: 1em;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffbf00;
+    font-weight: bold;
+}
