@@ -10,10 +10,28 @@ nav a {
     text-decoration: none;
     margin: 0 15px;
     font-size: 1.2em;
-    transition: color 0.3s;
+    padding: 0.5em;
+    transition: color 0.3s ease, font-weight 0.3s ease;
 }
 
 nav a:hover {
     color: #ffbf00;
     font-weight: bold;
+}
+
+nav a:focus {
+    outline: 2px solid #ffbf00;
+    outline-offset: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        padding: 0.5em;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
 }
