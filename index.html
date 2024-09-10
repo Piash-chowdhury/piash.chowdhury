@@ -9,53 +9,98 @@
 <body>
     <header>
         <h1>Piash Chowdhury</h1>
-        <p>GIS Analyst | Environmental Researcher | PhD Candidate</p>
+        <p>Senior GIS Analyst | Environmental Researcher | PhD Candidate</p>
     </header>
 
     <nav>
-        <a href="#about">About Me</a>
-        <a href="#research">Research</a>
-        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
         <a href="#publications">Publications</a>
+        <a href="#research">Research</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
+        <a href="#blog">Blog</a>
     </nav>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>I am a GIS Analyst and environmental researcher specializing in hydrodynamic modeling, geospatial analysis, and climate change mitigation. Currently pursuing a PhD in Space Research and Technology at the University of Tartu.</p>
-    </section>
-
-    <section id="research">
-        <h2>Research</h2>
-        <ul>
-            <li>Research on compound flood impacts on groundwater levels.</li>
-            <li>Blue carbon sequestration in Bangladesh Mangrove forests.</li>
-            <li>Water quality modeling under climate change.</li>
-        </ul>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li>Land cover change analysis in the Surma-Meghna River System.</li>
-            <li>Hydrodynamic modeling for coastal communities.</li>
-            <li>GIS-based water management tools.</li>
-        </ul>
+        <p>I am a Senior GIS Analyst and environmental researcher specializing in hydrodynamic modeling, geospatial analysis, and climate change mitigation. Currently, I am searching for PhD opportunities to continue my research in environmental sciences and hydrology.</p>
     </section>
 
     <section id="publications">
         <h2>Publications</h2>
         <ul>
-            <li><a href="#">Quantifying Blue Carbon Sequestration in Bangladesh Mangrove Forests</a></li>
-            <li><a href="#">Flash Flood Risk Zonation in the Sylhet Basin</a></li>
-            <li><a href="#">Shoreline Dynamics in Coastal Bangladesh</a></li>
+            <li><a href="https://doi.org/10.1007/s12517-024-11907-6">Saha, G. et al. (2024) Flash flood potential risk zonation mapping using GIS-based spatial multi-index model.</a></li>
+            <li><a href="https://doi.org/10.1007/s11852-023-01000-7">Chowdhury, P., Sikder, M.B. (2024). Shoreline dynamics in the reserved region of meghna estuary.</a></li>
+            <li><a href="https://doi.org/10.1007/s10661-021-09726-3">Ahmed, Z. et al. (2022) Does anthropogenic upstream water withdrawal impact the Teesta transboundary river basin?</a></li>
         </ul>
+        <!-- Add remaining publications and book chapters -->
+    </section>
+
+    <section id="research">
+        <h2>Research Experience</h2>
+        <ul>
+            <li>Monitoring Water Budget Components on Ganges-Brahmaputra-Meghna River Basins Using Earth Observation data (2024)</li>
+            <li>Quantifying blue carbon sequestration in Bangladesh's mangrove forests (2024)</li>
+            <li>Impacts of Disasters in The Coastal Region of Bangladesh; The Case of Kuakata, Patuakhali (Student Researcher)</li>
+        </ul>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <p><strong>Masters in Geography and Environment</strong><br>
+        Shahjalal University of Science and Technology (SUST), Sylhet, Bangladesh (2022)</p>
+        <p><strong>Bachelor of Science in Geography and Environment</strong><br>
+        Shahjalal University of Science and Technology (SUST), Sylhet, Bangladesh (2019)</p>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>Python, R, Google Earth Engine (GEE), ERDAS IMAGINE, ARCGIS, QGIS</li>
+            <li>Surface water modeling software (SMS, MIKE, HEC-RAS, Delft3D)</li>
+            <li>Lab analysis: BOD tests, pollen and diatom testing, etc.</li>
+        </ul>
+    </section>
+
+    <section id="experience">
+        <h2>Professional Experience</h2>
+        <p><strong>Senior GIS Analyst</strong><br>
+        <img src="logo_spekter.png" alt="Spekter GmbH Logo" width="100"> Spekter GmbH, Germany (May 2020 - Ongoing)</p>
+        <p><strong>Research Assistant</strong><br>
+        <img src="logo_sust.png" alt="SUST Logo" width="100"> Shahjalal University of Science and Technology (July 2019 - June 2020)</p>
     </section>
 
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>Email: piash@example.com</p>
-        <p>LinkedIn: <a href="#">linkedin.com/in/piash</a></p>
+        <p>Email: <a href="mailto:piashchowdhury038@gmail.com">piashchowdhury038@gmail.com</a></p>
+        <p>Phone: +8801683672209</p>
+        <div id="map"></div>
+        <script>
+            function initMap() {
+                var location = {lat: 22.82, lng: 91.10}; // Replace with your desired location
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 15,
+                    center: location
+                });
+                var marker = new google.maps.Marker({
+                    position: location,
+                    map: map
+                });
+            }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+    </section>
+
+    <section id="blog">
+        <h2>Blog / Ongoing Projects</h2>
+        <article>
+            <h3>Quantifying Blue Carbon Sequestration</h3>
+            <img src="project_image.jpg" alt="Project Image" width="300">
+            <p>A study focused on Nijhum Dwip's mangrove forests and their role in blue carbon storage.</p>
+        </article>
+        <!-- Add more ongoing projects -->
     </section>
 
     <footer>
